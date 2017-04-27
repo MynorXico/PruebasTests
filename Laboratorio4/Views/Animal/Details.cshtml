@@ -1,0 +1,58 @@
+﻿@model Laboratorio4.Models.AnimalModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AnimalModel</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ojos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ojos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Patas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apodo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apodo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cubierta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cubierta)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
